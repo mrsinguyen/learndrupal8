@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains \Drupal\d8form\Form\D8Form.
+ */
+
 namespace Drupal\d8form\Form;
 
 use Drupal\Core\Form\FormBase;
