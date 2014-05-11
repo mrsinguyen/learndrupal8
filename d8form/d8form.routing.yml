@@ -1,6 +1,7 @@
 d8form:
-  pattern: 'd8formpage'
+  path: 'd8formpage'
   defaults:
+    _title: 'Drupal 8 Form Page'
     _content: '\Drupal\d8form\Controller\D8FormController::d8formPage'
   requirements:
     _permission: 'access content'

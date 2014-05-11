@@ -2,15 +2,10 @@
  
 namespace Drupal\d8form\Controller;
  
-use Drupal\Core\Controller\ControllerInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\Core\Controller\ControllerBase;
  
-class D8FormController implements ControllerInterface {
- 
-  public static function create(ContainerInterface $container) {
-    return new static($container->get('module_handler'));
-  }
- 
+class D8FormController extends ControllerBase {
+
   /**
    * Demo for d8 form page
    */
