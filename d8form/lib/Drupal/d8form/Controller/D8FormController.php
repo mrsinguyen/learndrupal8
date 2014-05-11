@@ -10,9 +10,7 @@ class D8FormController extends ControllerBase {
    * Demo for d8 form page
    */
   public function d8formPage() {
-    return array(
-      '#markup' => t('This is the demo d8form page.'),
-    );
+    return \Drupal::formBuilder()->getForm('Drupal\d8form\Form\D8Form');
   }
  
 }
