@@ -5,3 +5,10 @@ d8form:
     _content: '\Drupal\d8form\Controller\D8FormController::d8formPage'
   requirements:
     _permission: 'access content'
+d8form.form:
+  path: 'd8form'
+  defaults:
+    _title: 'Drupal 8 Form'
+    _form: '\Drupal\d8form\Form\D8Form'
+  requirements:
+    _permission: 'access content'
