@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function d8form_menu() {
+  // The paths given here need to match the ones in d8form.routing.yml exactly.
+  $items['d8formpage'] = array(
+    'title' => 'Drupal 8 Form',
+    'description' => 'This is the demo d8form page.',
+    // The name of the route from d8form.routing.yml
+    'route_name' => 'd8form',
+  );
+  
+  return $items;
+}
