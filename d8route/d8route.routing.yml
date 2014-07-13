@@ -1,3 +1,9 @@
 route_callbacks:
   - '\Drupal\d8route\Routing\D8RouteRoutes::routes'
   
+d8route.hellouser:
+  path: 'hello/{user}'
+  defaults:
+    _content: '\Drupal\d8route\Controller\D8RouteController::contentUser'
+  requirements:
+    _permission: 'access content'
