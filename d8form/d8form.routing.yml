@@ -12,3 +12,10 @@ d8form.form:
     _form: '\Drupal\d8form\Form\D8Form'
   requirements:
     _permission: 'TRUE'
+d8form.formarg:
+  path: 'd8form/{name}'
+  defaults:
+    _title_callback: '\Drupal\d8form\Controller\D8FormController::D8FormPageArgTitle'
+    _form: '\Drupal\d8form\Form\D8Form'
+  requirements:
+    _permission: 'TRUE'

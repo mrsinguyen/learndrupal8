@@ -21,4 +21,11 @@ class D8FormController extends ControllerBase {
     return $this->t('Drupal 8 Form');
   }
 
+  /**
+   * 
+   */
+  public function D8FormPageArgTitle($name) {
+    return $this->t('Drupal 8 Form @name', array('@name' => $name));
+  }
+
 }
