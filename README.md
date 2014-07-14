@@ -24,7 +24,7 @@ Learn Drupal8
 * Alter service definitions
 * Build complier pass
 
-**Plugins*
+**Plugins**
 
 * Define block plugin, output "Hello" in content
 * What's the block use plugin api?
