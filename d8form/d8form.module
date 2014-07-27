@@ -1,8 +1,0 @@
-<?php
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function d8form_form_d8form_form_alter(&$form, &$form_state) {
-  $form['phone_number']['#description'] = t('Start with + and your country code.');
-}

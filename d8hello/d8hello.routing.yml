@@ -1,7 +1,0 @@
-d8hello:
-  path: 'd8hello'
-  defaults:
-    _title: 'Drupal 8 Hello'
-    _content: '\Drupal\d8hello\Controller\D8HelloController::d8helloPage'
-  requirements:
-    _permission: 'TRUE'
