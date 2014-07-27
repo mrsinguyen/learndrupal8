@@ -1,0 +1,6 @@
+services:
+  d8training.route_subscriber:
+    class: Drupal\d8training\Routing\D8TrainingRouteSubscriber
+    tags:
+      - { name: event_subscriber }
+      

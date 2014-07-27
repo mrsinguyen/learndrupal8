@@ -1,0 +1,30 @@
+d8training.hello:
+  path: 'd8training/hello'
+  defaults:
+    _title: 'Drupal 8 Hello'
+    _content: '\Drupal\d8training\Controller\D8TrainingController::contentHello'
+  requirements:
+    _permission: 'TRUE'
+d8training.user:
+  path: 'd8training/{user}'
+  defaults:
+    _content: '\Drupal\d8training\Controller\D8TrainingController::contentUser'
+  requirements:
+    _permission: 'access content'
+d8training.form:
+  path: 'd8training/form'
+  defaults:
+    _title_callback: '\Drupal\d8training\Controller\D8TrainingController::d8trainingTitle'
+    _form: '\Drupal\d8training\Form\D8TrainingForm'
+  requirements:
+    _permission: 'TRUE'
+d8training.formpage:
+  path: 'd8training/formpage'
+  defaults:
+    _title_callback: '\Drupal\d8training\Controller\D8TrainingController::d8trainingTitle'
+    _content: '\Drupal\d8training\Controller\D8TrainingController::d8trainingFormPage'
+  requirements:
+    _permission: 'TRUE'
+    
+route_callbacks:
+  - '\Drupal\d8training\Routing\D8TrainingRoutes::routes'

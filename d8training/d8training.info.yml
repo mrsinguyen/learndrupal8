@@ -1,0 +1,7 @@
+name: Drupal 8 Training
+type: module
+description: 'This is a demo for Drupal 8 training.'
+package: Custom
+version: 8.x-1.x-dev
+core: 8.x
+hidden: false

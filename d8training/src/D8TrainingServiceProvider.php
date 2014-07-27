@@ -2,10 +2,10 @@
 
 /**
  * @file
- * Contains Drupal\d8route\D8RouteServiceProvider
+ * Contains Drupal\d8training\D8RouteServiceProvider
  */
 
-namespace Drupal\d8route;
+namespace Drupal\d8training;
 
 use Drupal\Core\DependencyInjection\ContainerBuilder;
 use Drupal\Core\DependencyInjection\ServiceProviderBase;
@@ -13,7 +13,7 @@ use Drupal\Core\DependencyInjection\ServiceProviderBase;
 /**
  *
  */
-class D8RouteServiceProvider extends ServiceProviderBase {
+class D8TrainingServiceProvider extends ServiceProviderBase {
 
   /**
    * {@inheritdoc}
@@ -26,8 +26,8 @@ class D8RouteServiceProvider extends ServiceProviderBase {
    * {@inheritdoc}
    */
   public function alter(ContainerBuilder $container) {
-    $definition = $container->getDefinition('d8route.route_subscriber');
-    $definition->setClass('Drupal\d8route\Routing\RouteSubscriberAlter');
+    $definition = $container->getDefinition('d8training.route_subscriber');
+    $definition->setClass('Drupal\d8training\Routing\D8TrainingRouteSubscriberAlter');
   }
 
 }
