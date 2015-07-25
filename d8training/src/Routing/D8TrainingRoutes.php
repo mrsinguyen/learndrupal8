@@ -20,7 +20,7 @@ class D8TrainingRoutes {
     $route = new Route(
         'd8training/hello-world', 
         array(
-          '_content' => '\Drupal\d8training\Controller\D8TrainingController::contentHelloWorld',
+          '_controller' => '\Drupal\d8training\Controller\D8TrainingController::contentHelloWorld',
           '_title' => 'Hello World'
         ), 
         array(
