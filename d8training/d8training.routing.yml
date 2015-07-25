@@ -2,13 +2,13 @@ d8training.hello:
   path: 'd8training/hello'
   defaults:
     _title: 'Drupal 8 Hello'
-    _content: '\Drupal\d8training\Controller\D8TrainingController::contentHello'
+    _controller: '\Drupal\d8training\Controller\D8TrainingController::contentHello'
   requirements:
     _permission: 'TRUE'
 d8training.user:
   path: 'd8training/{user}'
   defaults:
-    _content: '\Drupal\d8training\Controller\D8TrainingController::contentUser'
+    _controller: '\Drupal\d8training\Controller\D8TrainingController::contentUser'
   requirements:
     _permission: 'access content'
 d8training.form:
@@ -22,7 +22,7 @@ d8training.formpage:
   path: 'd8training/formpage'
   defaults:
     _title_callback: '\Drupal\d8training\Controller\D8TrainingController::d8trainingTitle'
-    _content: '\Drupal\d8training\Controller\D8TrainingController::d8trainingFormPage'
+    _controller: '\Drupal\d8training\Controller\D8TrainingController::d8trainingFormPage'
   requirements:
     _permission: 'TRUE'
     
