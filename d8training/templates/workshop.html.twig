@@ -1,0 +1,22 @@
+{#
+/**
+ * @file workshop.html.twig
+ * Default theme implementation to present Workshop data.
+ *
+ * This template is used when viewing Workshop pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_workshop()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('workshop') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>
