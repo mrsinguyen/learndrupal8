@@ -1,0 +1,30 @@
+add course entities:
+  title: 'Create new Course entities'
+
+administer course entities:
+  title: 'Administer Course entities'
+  description: 'Allow to access the administration form to configure Course entities.'
+
+delete course entities:
+  title: 'Delete Course entities'
+
+edit course entities:
+  title: 'Edit Course entities'
+
+view course entities:
+  title: 'View Course entities'
+add workshop entities:
+  title: 'Create new Workshop entities'
+
+administer workshop entities:
+  title: 'Administer Workshop entities'
+  description: 'Allow to access the administration form to configure Workshop entities.'
+
+delete workshop entities:
+  title: 'Delete Workshop entities'
+
+edit workshop entities:
+  title: 'Edit Workshop entities'
+
+view workshop entities:
+  title: 'View Workshop entities'

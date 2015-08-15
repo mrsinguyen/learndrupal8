@@ -1,0 +1,44 @@
+# Course routing definition
+course.settings_tab:
+  route_name: course.settings
+  title: 'Settings'
+  base_route: course.settings
+
+entity.course.canonical:
+  route_name: entity.course.canonical
+  base_route: entity.course.canonical
+  title: 'View'
+
+entity.course.edit_form:
+  route_name: entity.course.edit_form
+  base_route: entity.course.canonical
+  title: Edit
+
+entity.course.delete_form:
+  route_name:  entity.course.delete_form
+  base_route:  entity.course.canonical
+  title: Delete
+  weight: 10
+
+# Workshop routing definition
+workshop.settings_tab:
+  route_name: workshop.settings
+  title: 'Settings'
+  base_route: workshop.settings
+
+entity.workshop.canonical:
+  route_name: entity.workshop.canonical
+  base_route: entity.workshop.canonical
+  title: 'View'
+
+entity.workshop.edit_form:
+  route_name: entity.workshop.edit_form
+  base_route: entity.workshop.canonical
+  title: Edit
+
+entity.workshop.delete_form:
+  route_name:  entity.workshop.delete_form
+  base_route:  entity.workshop.canonical
+  title: Delete
+  weight: 10
+

@@ -28,3 +28,103 @@ d8training.formpage:
     
 route_callbacks:
   - '\Drupal\d8training\Routing\D8TrainingRoutes::routes'
+
+# Course routing definition
+entity.course.canonical:
+  path: '/admin/course/{course}'
+  defaults:
+    _entity_view: 'course'
+    _title: 'Course'
+  requirements:
+    _entity_access: 'course.view'
+
+entity.course.collection:
+  path: '/admin/course'
+  defaults:
+    _entity_list: 'course'
+    _title: 'Course list'
+  requirements:
+    _permission: 'view course entities'
+
+entity.course.add_form:
+  path: '/admin/course/add'
+  defaults:
+    _entity_form: course.add
+    _title: 'Add Course'
+  requirements:
+    _entity_create_access: 'course'
+
+entity.course.edit_form:
+  path: '/admin/course/{course}/edit'
+  defaults:
+    _entity_form: course.edit
+    _title: 'Edit Course'
+  requirements:
+    _entity_access: 'course.edit'
+
+entity.course.delete_form:
+  path: '/admin/course/{course}/delete'
+  defaults:
+    _entity_form: course.delete
+    _title: 'Delete Course'
+  requirements:
+    _entity_access: 'course.delete'
+
+course.settings:
+  path: 'admin/structure/course'
+  defaults:
+   _form: '\Drupal\d8training\Entity\Form\CourseSettingsForm'
+   _title: 'Course settings'
+  requirements:
+    _permission: 'administer course entities'
+
+
+# Workshop routing definition
+entity.workshop.canonical:
+  path: '/admin/workshop/{workshop}'
+  defaults:
+    _entity_view: 'workshop'
+    _title: 'Workshop'
+  requirements:
+    _entity_access: 'workshop.view'
+
+entity.workshop.collection:
+  path: '/admin/workshop'
+  defaults:
+    _entity_list: 'workshop'
+    _title: 'Workshop list'
+  requirements:
+    _permission: 'view workshop entities'
+
+entity.workshop.add_form:
+  path: '/admin/workshop/add'
+  defaults:
+    _entity_form: workshop.add
+    _title: 'Add Workshop'
+  requirements:
+    _entity_create_access: 'workshop'
+
+entity.workshop.edit_form:
+  path: '/admin/workshop/{workshop}/edit'
+  defaults:
+    _entity_form: workshop.edit
+    _title: 'Edit Workshop'
+  requirements:
+    _entity_access: 'workshop.edit'
+
+entity.workshop.delete_form:
+  path: '/admin/workshop/{workshop}/delete'
+  defaults:
+    _entity_form: workshop.delete
+    _title: 'Delete Workshop'
+  requirements:
+    _entity_access: 'workshop.delete'
+
+workshop.settings:
+  path: 'admin/structure/workshop'
+  defaults:
+   _form: '\Drupal\d8training\Entity\Form\WorkshopSettingsForm'
+   _title: 'Workshop settings'
+  requirements:
+    _permission: 'administer workshop entities'
+

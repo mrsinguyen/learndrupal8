@@ -1,0 +1,24 @@
+# Course menu items definition
+entity.course.collection:
+  title: 'Course list'
+  route_name: entity.course.collection
+  description: 'List Course entities'
+
+course.admin.structure.settings:
+  title: Course settings
+  description: 'Configure Course entities'
+  route_name: course.settings
+  parent: system.admin_structure
+
+# Workshop menu items definition
+entity.workshop.collection:
+  title: 'Workshop list'
+  route_name: entity.workshop.collection
+  description: 'List Workshop entities'
+
+workshop.admin.structure.settings:
+  title: Workshop settings
+  description: 'Configure Workshop entities'
+  route_name: workshop.settings
+  parent: system.admin_structure
+

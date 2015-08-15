@@ -1,0 +1,14 @@
+entity.course.add_form:
+  route_name: entity.course.add_form
+  title: 'Add Course'
+  appears_on:
+    - entity.course.collection
+    - entity.course.canonical
+
+entity.workshop.add_form:
+  route_name: entity.workshop.add_form
+  title: 'Add Workshop'
+  appears_on:
+    - entity.workshop.collection
+    - entity.workshop.canonical
+
